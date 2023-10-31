@@ -4,7 +4,6 @@ import { NavigationContainer } from "@react-navigation/native";
 
 //screens
 
-import HomeScreens from "./screens/HomeScreens";
 import ListaScreens from "./screens/ListaScreens";
 import PruebaScreens from "./screens/PruebaScreens"
 
@@ -13,9 +12,8 @@ const Tab = createBottomTabNavigator();
 function MyTabs(){
         return(
             <Tab.Navigator>
-                <Tab.Screen name="Home" component={HomeScreens}/>
+                <Tab.Screen name="Home" component={PruebaScreens}/>
                 <Tab.Screen name="Lista" component={ListaScreens}/>
-                <Tab.Screen name="Prueba" component={PruebaScreens}/>
             </Tab.Navigator>
         );           
 }
